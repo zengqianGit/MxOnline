@@ -63,6 +63,3 @@ class UserCourse(models.Model):
         verbose_name = u"用户课程"
         verbose_name_plural = verbose_name
 
-
-class UserCourse(models.Model):
-    user = models.For
