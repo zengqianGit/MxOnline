@@ -23,12 +23,12 @@
             <div class="box">
                 <span class="word2">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</span>
                 <input type="password" name="password_l" id="password_l" placeholder="请输入您的密码"/>
-            </div>JIUSHIJK;;A;LSLK
+            </div>
             <div class="error btns login-form-tips" id="jsLoginTips"></div> <!--登录错误提示-->
             <div class="btns">
                 <span><input type="checkbox" id="jsAutoLogin" />&nbsp;自动登录</span>
                 <span class="forget btn fr">忘记密码</span>
-            <c/div>
+            </div>
             <div lass="button">
                 <input type="button" value="登录" id="jsLoginBtn" />
             </div>
@@ -69,8 +69,8 @@
             <p class="fl hd-tips">慕学在线，在线学习平台！</p>
             <ul class="fr hd-bar">
                 <li>服务电话：<span>4001008031</span></li>
-                <li><a href="/login/">[登录]</a></li>
-                <li class="active"><a href="/register/">[注册]</a></li>
+                <li><a href="{% url 'login' %}">[登录]</a></li>
+                <li class="active"><a href="{% url 'register' %}">[注册]</a></li>
             </ul>
         </div>
     </div>
@@ -154,7 +154,7 @@
                     {% csrf_token %}
                     </form>
                 </div>
-                <p class="form-p">已有账号？<a href="login.html">[立即登录]</a></p>
+                <p class="form-p">已有账号？<a href="{% url 'register' %}">[立即登录]</a></p>
             </div>
         </div>
     </div>
